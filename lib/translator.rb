@@ -9,7 +9,7 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   # code goes here
-  library = load_library(emoticons)
+  library = load_library(file)
   if library[:get_emoticon].include?(value)
     library[:get_emoticon][value]
   else 
