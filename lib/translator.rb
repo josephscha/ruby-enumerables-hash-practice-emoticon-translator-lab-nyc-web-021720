@@ -10,7 +10,7 @@ end
 def get_japanese_emoticon(emoticons, value)
   # code goes here
   library = load_library(emoticons)
-  if library
+  if library[:get_emoticon]
 end
 
 def get_english_meaning(emoticons, value)
