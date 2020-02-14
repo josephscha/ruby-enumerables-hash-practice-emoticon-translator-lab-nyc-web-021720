@@ -7,7 +7,7 @@ def load_library(file)
   emoticon_hash = {:get_meaning => {}, :get_emoticon => {}}
 end 
 
-def get_japanese_emoticon(file_path = './lib/emoticons.yml')
+def get_japanese_emoticon(file_path = './lib/emoticons.yml', english)
   # code goes here
   library = load_library(file_path)
 end
