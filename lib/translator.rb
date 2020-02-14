@@ -9,8 +9,8 @@ def load_library(file="./lib/emoticons.yml")
   emoticons.each do |key,value|
     english_emoticons[value[0]]=value[1]
     japanese_emoticons[value[1]]=key
+  {:get_meaning => {}, :get_emoticon => {}}
 end 
-
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
