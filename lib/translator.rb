@@ -7,9 +7,9 @@ def load_library(file)
   emoticon_hash = {:get_meaning => {}, :get_emoticon => {}}
 end 
 
-def get_japanese_emoticon(emoticon, emoji)
+def get_japanese_emoticon(emoticons, emoji)
   # code goes here
-  library = load_library(file_path)
+  library = load_library(emoticons)
 end
 
 def get_english_meaning
