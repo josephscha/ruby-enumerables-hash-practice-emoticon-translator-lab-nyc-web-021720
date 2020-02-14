@@ -3,18 +3,17 @@ require "yaml"
 
 def load_library(file="./lib/emoticons.yml")
   emoticons = YAML.load_file(file)
-    {:get_meaning => {}, :get_emoticon => {}}
-  japanese_emoticons = {}
-  english_emoticons = {}
-  emoticons.each do |key,value|
-    english_emoticons[value[0]]=value[1]
-    japanese_emoticons[value[1]]=key
+  emoticons_hash = {:get_meaning => {}, :get_emoticon => {}}
+  emoticons.each do |type, language|
+    emoticons_hash[:get_meaning][language[1]] = type
+    emoticons_hash[:get_emoticon][language[0]] = language[1]
+  end 
+  return emoticons_hash
+end
 
-end 
-
-def get_japanese_emoticon(path, emoticon)
+def get_japanese_emoticon(file, emoticon)
   # code goes here
-  library = load_library(path)
+  library = load_library(file)
   if library[:get_emoticon].include?(emoticon)
     library[:get_emoticon][emoticon]
   else 
