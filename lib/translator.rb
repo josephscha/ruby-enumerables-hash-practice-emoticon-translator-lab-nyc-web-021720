@@ -14,6 +14,7 @@ def get_japanese_emoticon(emoticons, value)
     library[:get_emoticon][value]
   else 
     return "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning(emoticons, value)
