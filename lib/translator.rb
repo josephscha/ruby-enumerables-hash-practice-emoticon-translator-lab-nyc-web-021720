@@ -10,7 +10,7 @@ end
 def get_japanese_emoticon(emoticons, emoji)
   # code goes here
   library = load_library(emoticons)
-  new_emoticon = library
+  new_emoticon = library[:get_emoticon]
 end
 
 def get_english_meaning
