@@ -7,7 +7,7 @@ def load_library(file)
   emoticon_hash = {:get_meaning => {}, :get_emoticon => {}}
 end 
 
-def get_japanese_emoticon(emoticons, value)
+def get_japanese_emoticon(file, emoticon)
   # code goes here
   library = load_library(emoticons)
   if library[:get_emoticon].include?(value)
