@@ -13,7 +13,7 @@ def get_japanese_emoticon(emoticons, value)
   if library[:get_emoticon].include?(value)
     library[:get_emoticon][value]
   else 
-    return "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
   end
 end
 
@@ -23,6 +23,6 @@ def get_english_meaning(emoticons, value)
   if library[:get_meaning].include?(value)
     library[:get_meaning][value]
   else 
-    return "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
   end
 end
