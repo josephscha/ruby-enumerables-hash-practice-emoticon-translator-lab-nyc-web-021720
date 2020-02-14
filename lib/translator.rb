@@ -8,7 +8,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
-  library = load_library(file)
+  library = load_library(path)
   if library[:get_emoticon].include?(emoticon)
     library[:get_emoticon][emoticon]
   else 
