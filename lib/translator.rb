@@ -10,11 +10,11 @@ end
 def get_japanese_emoticon(emoticons, value)
   # code goes here
   library = load_library(emoticons)
-  new_emoticon = library[:get_emoticon][value]
+  result = library[:get_emoticon][value]
   if library[:get_emoticon][value] == nil 
     return "Sorry, that emoticon was not found"
   end 
-  
+  result
 end
 
 def get_english_meaning
