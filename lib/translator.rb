@@ -19,7 +19,7 @@ end
 
 def get_english_meaning(emoticons, value)
   # code goes here
-    library = load_library(emoticons)
+  library = load_library(emoticons)
   result = library[:get_meaning][value]
   if library[:get_meaning][value] == nil 
     return "Sorry, that emoticon was not found"
